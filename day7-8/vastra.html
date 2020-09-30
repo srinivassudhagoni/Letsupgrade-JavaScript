@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="vastra.css">
+    <title>vastra</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>vastra </h1>
+      <div class="search">
+        <input
+          type="search"
+          onkeyup="searchProduct(this.value)"
+          placeholder="Search For Products"
+        />
+          <input type="number" name="mini" min="0"  placeholder="Minimum prize" id="mini" >
+          <input type="number" name="max" min="0"  placeholder="Maximum prize" id="max" >
+          <button onclick="pricefilter()">Filter</button>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="productwrapper" id="productwrapper"></div>
+    </div>
+
+    <div class="products">
+      <h1 > cart</h1><h2  id="count">0</h2>
+      <div class="productwrapper" id="cart"></div>
+    </div>
+
+    <script src="vastra.js"></script>
+  </body>
+</html>
